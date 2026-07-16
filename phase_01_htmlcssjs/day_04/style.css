@@ -1,0 +1,36 @@
+body{
+    height:85vh;
+    display:flex;
+}
+#container{
+    border:2px solid red;
+    padding:20px;
+    border-radius:10px;
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+img{
+    width:250px;
+    height:300px;
+    border-radius:10px;
+}
+
+.thumb{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+button{
+    font-size:22px;
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: red;
+}

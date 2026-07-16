@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <img src="https://i.pinimg.com/736x/64/c8/27/64c8270b989101eaaf1194bdc503ba86.jpg" alt="">
+
+        <h2>King Khan</h2>
+
+        <div class="thumb">
+            <button id="like">👍</button>
+            <h2>Likes: <span id="likecount">0</span></h2>
+        </div>
+
+        <div class="thumb">
+            <button id="dislike">👎</button>
+            <h2> Dislikes: <span id="dslikecount">0</span></h2>
+        </div>
+    </div>
+
+</body>
+<script>
+var likebtn=document.querySelector("#like")
+ var count=0
+likebtn.addEventListener("click",function(){
+   
+    count++
+    var likeCount=document.querySelector("#likecount")
+    likeCount.innerText=count
+})
+var dislikebtn=document.querySelector("#dislike")
+var count1=0;
+dislikebtn.addEventListener("click",function(){
+count1++;
+var dislikeCount=document.querySelector("#dslikecount")
+    dislikeCount.innerText=count1
+})
+</script>
+</html>
